@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900');
+
+body {
+  font-family: 'Roboto';
+  font-size: 12pt;
+}
+td {
+  font-family: 'Roboto';
+  font-size: 12pt;
+}
+.header {
+  font-family: 'roboto' black;
+  font-size: 14pt;
+}
+
+input[type=text] {
+  border: 3px solid #999;
+  border-radius: 4px;
+}
+
+input[type=text]:focus {
+  border: 3px solid #777;
+  border-radius: 4px;
+}
+
+.buttons {
+  background-color: #006465;
+  border: 2px solid #006465;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 750;
+  margin-left: 10px;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+.printButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #006465 !important;
+}
+
+.exportButton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #006465 !important;
+}
+
+.calcButton {
+  background-color: #006465 !important;
+  text-align: center;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.calcButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.calcButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.calcButton:hover span {
+  padding-right: 25px;
+}
+
+.calcButton:hover span:after {
+  opacity: 1;
+  right: 0;
+  background-color: #006465 !important;
+}
+
+.clearButton:hover {
+  border: 2px solid #006465;
+  color: #006465; 
+  background-color: #e7e7e7;
+  transform: scale(1);
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 10px;
+  font-size: 1em;
+  font-family: 'Roboto';
+  min-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0,15);
+}
+
+.styled-table thead tr {
+  background-color: #006465; 
+  color: #ffffff;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;  
+}
+
+.styled-table th,
+.styled-table rd {
+    padding: 15px 20px;
+    min-width: 70px;
+}
+
+.styled-table tbody tr {
+  border-bottom: thin solid #dddddd;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.styled-table tbody td {
+  padding: 12px 24px;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #006465;
+}
+
+#symbol {
+  border-bottom: thin solid #dddddd;
+  text-align: left;
+}
+
+#weight, #shares, #sharePrice, #cost, #currentYield {
+  border-bottom: thin solid #dddddd;
+  text-align: right;
+}
+
+#portSize {
+  font-size: 20pt;
+  font-weight: 600;
+  padding-left: 10px;
+  font-family: sans-serif;
+}
+
+#dollarSign {
+  font-size: 16pt;
+  font-weight: 500;
+}
