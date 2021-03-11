@@ -152,6 +152,13 @@ let table = document.querySelector("table");
 // let data = Object.keys(portfolio[0]);
 let headers = ["Symbol", "Weight", "Share Price", "Shares", "Cost", "Current Yield"];
 
+document.getElementById('portAmount').addEventListener('keyup',
+function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById('calcButton').click();
+    }
+});
 
 function calculateTable() {
     let notNaN = document.getElementById("portAmount").value;
